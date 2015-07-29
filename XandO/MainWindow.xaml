@@ -26,7 +26,9 @@
         <Button x:Name="B9" Grid.Column="1" HorizontalAlignment="Left" Height="43" Margin="107,106,0,0" Grid.Row="1" VerticalAlignment="Top" Width="43" Click="B9_Click" FontSize="20"/>
         <Button x:Name="Reset" Content="Reset" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="271,221,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86" Click="Reset_Click"/>
         <Button x:Name="Exit" Content="Exit" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="376,221,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86" Click="Exit_Click"/>
-        <TextBox x:Name="txtTurn" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="1,161,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Player 1 first!" VerticalAlignment="Top" Width="149" FontWeight="Bold" FontSize="14"/>
+        
+        <TextBox x:Name="txtTurn" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="1,161,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" FontWeight="Bold" FontSize="14" IsReadOnly = "True" TextChanged="txtTurn_TextChanged" Text="Player 1 first!"/>
+        
         <Label x:Name="Player1" Content="Player 1: X" Grid.Column="1" HorizontalAlignment="Left" Margin="1,203,0,0" Grid.Row="1" VerticalAlignment="Top" Height="27" Width="149" FontSize="14" FontWeight="Bold"/>
         <Label x:Name="Player2" Content="Player 2: O" Grid.Column="1" HorizontalAlignment="Left" Margin="1,230,0,0" Grid.Row="1" VerticalAlignment="Top" Height="27" Width="149" FontSize="14" FontWeight="Bold"/>
         <Label Content="Tic Tac Toe: Player 1 vs Player 2" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="107,1,0,0" VerticalAlignment="Top" Width="260" FontSize="16" FontWeight="Bold"/>
@@ -35,8 +37,8 @@
         </Border>
         <Label x:Name="P1" Content="Player 1" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="302,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="64" FontSize="14" FontWeight="Bold"/>
         <Label x:Name="P2" Content="Player 2" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="376,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="62" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="P1score" Grid.Column="1" HorizontalAlignment="Left" Height="84" Margin="302,60,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="55" FontWeight="Bold" FontSize="72" BorderThickness="0"/>
-        <TextBox x:Name="P2score" Grid.Column="1" HorizontalAlignment="Left" Height="84" Margin="383,60,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="56" FontWeight="Bold" FontSize="72" BorderThickness="0"/>
+        <TextBox x:Name="P1score" Grid.Column="1" HorizontalAlignment="Left" Height="84" Margin="302,60,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="55" FontWeight="Bold" FontSize="72" BorderThickness="0" IsReadOnly = "True" TextChanged="P1score_TextChanged"/>
+        <TextBox x:Name="P2score" Grid.Column="1" HorizontalAlignment="Left" Height="84" Margin="383,60,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="56" FontWeight="Bold" FontSize="72" BorderThickness="0" IsReadOnly = "True"/>
         <Rectangle Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="149" Margin="367,0,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="0"/>
     </Grid>
 </Window>

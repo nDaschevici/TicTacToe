@@ -24,3 +24,16 @@ C:\Users\ndasc\Documents\Visual Studio 2013\Projects\XandO\XandO\obj\Debug\XandO
 C:\Users\ndasc\Documents\Visual Studio 2013\Projects\XandO\XandO\bin\Debug\XandO.exe
 C:\Users\ndasc\Documents\Visual Studio 2013\Projects\XandO\XandO\bin\Debug\XandO.pdb
 C:\Users\ndasc\Documents\Visual Studio 2013\Projects\XandO\XandO\obj\Debug\XandO.pdb
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\bin\Debug\XandO.exe.config
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO.exe
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\bin\Debug\XandO.exe
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\bin\Debug\XandO.pdb
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO.csprojResolveAssemblyReference.cache
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\MainWindow.baml
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\MainWindow.g.cs
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\App.g.cs
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO_MarkupCompile.cache
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO.g.resources
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO.Properties.Resources.resources
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO.csproj.GenerateResource.Cache
+C:\Users\ndasc\Documents\GitHub\TicTacToe\XandO\obj\Debug\XandO.pdb

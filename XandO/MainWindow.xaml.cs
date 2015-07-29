@@ -26,6 +26,7 @@ namespace XandO
         {
             InitializeComponent();
         }
+
         // Button clicks
         public void B1_Click(object sender, RoutedEventArgs e)
         {
@@ -207,14 +208,38 @@ namespace XandO
             CheckWinner();
         }
 
-        // Reset and Exit buttons - To Do
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
-            //Find another method to restart  <<<<<----------         TO DO
-            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
-            Application.Current.Shutdown();
+            B1.IsEnabled = true;
+            B1.Content = "";
+            B2.IsEnabled = true;
+            B2.Content = "";
+            B3.IsEnabled = true;
+            B3.Content = "";
+            B4.IsEnabled = true;
+            B4.Content = "";
+            B5.IsEnabled = true;
+            B5.Content = "";
+            B6.IsEnabled = true;
+            B6.Content = "";
+            B7.IsEnabled = true;
+            B7.Content = "";
+            B8.IsEnabled = true;
+            B8.Content = "";
+            B9.IsEnabled = true;
+            B9.Content = "";
+            //Switch Player
+            if (txtTurn.Text == "Player 1 Won!")
+            {
+                txtTurn.Text = "Player 2 first!";
+                player = "p2";
+            }
+            else
+            {
+                txtTurn.Text = "Player 1 first!";
+                player = "p1";
+            }
         }
-
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -234,8 +259,16 @@ namespace XandO
         }
 
         //Score                        -------------------               Score here TO DO!!    
-        public static void Score()
+        public void Score()
         {
+            /*
+            while(txtTurn.Text == "Player 1 Won!")
+            {
+                P1score.Text;
+            }
+            */
+
+            
             //To Do          
         }
         //Check Winner
@@ -249,14 +282,16 @@ namespace XandO
                     winner = 1;
                     txtTurn.Text = "Player 1 Won!";
                     StopGame();
+                    //Score();
                 }
                 else if (B1.Content == "O")
                 {
                     winner = 2;
                     txtTurn.Text = "Player 2 Won!";
                     StopGame();
+                    //Score();
                 }
-
+                Score();
             }
             else if (B4.Content == B5.Content && B5.Content == B6.Content)
             {
@@ -365,6 +400,16 @@ namespace XandO
                     StopGame();
                 }
             }
+        }
+
+        private void P1score_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtTurn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
 
         //Turn
